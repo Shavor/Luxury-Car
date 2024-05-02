@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,600;1,100&family=Lato:wght@400;700&family=Montserrat:wght@700&family=Open+Sans:wght@400;600&family=PT+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+    font: 16px/28px 'Be Vietnam Pro', Arial, Helvetica, sans-serif;
+    background-color: #000;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: .2 ease-in-out;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+button {
+    display: block;
+    border: none;
+    background-color: transparent;
+    font: inherit;
+    cursor: pointer;
+    transition: .2 ease-in-out;
+}
+
+#header-section {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 40px 0 40px;
+    /* background-color: rgb(0, 0, 0, 0.5); */
+}
+
+.header--dark  {
+    background-color: rgb(0, 0, 0, .9);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .65);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.btn-primary {
+    height: 48px;
+    width: 184px;
+    background-color: #EE8313;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    transition: .2s ease-out;
+}
+
+.btn-primary:hover {
+    background: #be6607;
+}
+
+.btn-secondary {
+    padding: 12px 24px;
+    font-weight: 600;
+    border: 1px solid #EE8313;
+    color: #EE8313;
+    line-height: 24px;
+}
+
+.title-section {
+    margin-bottom: 40px;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 64px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: .6px;
+}
+
+/*================= Header=========== */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.header-logo {
+    line-height: 11px;
+    cursor: pointer;
+}
+
+.header-logo__img,
+.footer-logo__img {
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+}
+
+.nav-main {
+    margin-left: auto;
+}
+
+.nav__main .active__nav {
+    background-color: #004AF2;
+}
+
+.nav-main__list {
+    display: flex;
+    gap: 48px;
+    margin-right: 72px;
+}
+
+.nav-main__link:hover {
+    transition: color .4s ease-out;
+    color: #EE8313;
+}
+
+/*================= Banner=========== */
+
+#banner-section {
+    position: relative;
+    padding-top: 100px;
+    overflow: hidden;
+}
+
+.banner {
+    max-width: 475px;
+    padding-top: 30px;
+}
+
+.banner__header {
+    font-size: 52px;
+    line-height: 64px;
+    letter-spacing: .6px;
+    font-weight: 700;
+    color: #ffff;
+}
+
+.banner__text {
+    font-size: 17px;
+    margin: 32px 0 48px;
+    opacity: .8;
+}
+
+.banner-featurs__text {
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.banner-featurs__text:first-child {
+    margin-right: 40px;
+}
+
+.banner-featurs__text-strong {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52px;
+    margin-right: 16px;
+    vertical-align: sub;
+}
+
+.banner-links-wrap {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    gap: 35px;
+}
+
+.banner-img {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    margin-top: 37px;
+}
+
+.banner-img::before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    width: 99%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: url('/img/car.jpg') no-repeat;
+}
+
+.banner-img::after {
+    position: absolute;
+    content: '';
+    z-index: 1;
+    top: 0;
+    right: 0;
+    width: 75%;
+    height: 100%;
+    background-color: rgb(52, 52, 52, 30%);
+}
+
+/*================= Rent=========== */
+
+#rent-section {
+    margin: 120px 0 60px;
+}
+
+.rent-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+.rent {
+    position: relative;
+    height: 524px;
+    background: url('/img/rent-1.svg') 50%/cover no-repeat;
+}
+
+.rent__name {
+    position: absolute;
+    top: 48px;
+    left: 48px;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+}
+
+.rent__link {
+    position: absolute;
+    bottom: 48px;
+    right: 60px;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    padding-right: 30px;
+    transition: color .2s ease-in-out;
+}
+
+.rent__link:hover {
+    color: #EE8313;
+}
+
+.rent__link::after {
+    position: absolute;
+    content: '';
+    background: url('img/errow.svg') 50%/cover no-repeat;
+    top: 50%;
+    right: 0;
+    height: 16px;
+    width: 8px;
+    transform: translateY(-50%);
+}
+
+.rent:nth-child(2) {
+    background-image: url('/img/rent-2.svg');
+}
+
+.rent:nth-child(3) {
+    background-image: url('/img/rent-3.svg');
+}
+
+.rent:nth-child(4) {
+    background-image: url('/img/rent-4.svg');
+}
+
+/* ========services============ */
+
+#services-section {
+    margin-bottom: 120px;
+}
+
+.services-section__title {
+    text-align: left;
+    margin-bottom: 66px;
+}
+
+.services-wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    color: #fff;
+    letter-spacing: 0.6%;
+}
+
+.services__img {
+    margin-bottom: 24px;
+}
+
+.services__title {
+    margin-bottom: 16px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.services__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    opacity: .8;
+}
+
+/* ========destination========= */
+
+#destination-section {
+    padding-bottom: 162px;
+}
+
+.destination-wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.destination {
+    background-color: #131313;
+}
+
+.destination__img {
+    margin-bottom: 24px;
+}
+
+.destination-infor {
+    font-size: 16px;
+    padding-left: 24px;
+
+}
+
+.distination-infor__title {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.distination-infor__text {
+    margin-bottom: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.41%;
+    opacity: .8;
+}
+
+.distination-infor__price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.distination-infor__price-img {
+    margin-right: 20px;
+}
+
+.distination-infor__link {
+    display: block;
+    padding-bottom: 24px;
+    color: #EE8313;
+    transition: color .2s ease-in-out;
+}
+
+.distination-infor__link:hover {
+    color:#be6607;
+}
+
+/* =========Location========== */
+
+#location-section {
+    padding-bottom: 102px;
+}
+
+/* =============footer======= */
+
+#footer-section {
+    background-color: #1F1905;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.footer-about {
+    max-width: 40%;
+}
+
+.footer-logo__wrap {
+    display: flex;
+    align-items: center;
+    margin-bottom: 64px;
+}
+
+.footer-logo__text {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1%;
+}
+
+.footer-about {
+    padding-top: 22px;
+}
+
+.footer-about__text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #fff;
+    max-width: 235px;
+}
+
+.footer-nav__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+    padding-top: 62px;
+    margin: 0 100px 0 auto;
+}
+
+.footer-nav__header {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #fff;
+    margin-bottom: 32px;
+}
+
+.footer-nav__item {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 28px;
+}
+
+.footer-nav__list {
+    opacity: .8;
+    transition: color 0.2s ease-in-out;
+}
+
+.footer-nav__item:hover {
+    color: #EE8313;
+}
+
+.footer-logo__img {
+    margin-right: 17px;
+}
+
+.footer-social {
+   margin-top: 66px;
+}
+
+.footer-social__link {
+    display: block;
+    margin-bottom: 17px;    
+}
+
+.footer-social__link:nth-child(3) {
+    margin-bottom: 0;
+}
+
+.footer-social svg {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+.footer-copiright {
+    background-color: #EE8313;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-copiright__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #fff;
+}
