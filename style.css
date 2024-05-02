@@ -47,7 +47,7 @@ button {
     /* background-color: rgb(0, 0, 0, 0.5); */
 }
 
-.header--dark  {
+.header--dark {
     background-color: rgb(0, 0, 0, .9);
     box-shadow: 0 5px 10px rgba(0, 0, 0, .65);
 }
@@ -198,7 +198,7 @@ button {
     height: 100%;
     top: 0;
     right: 0;
-    background: url('/img/car.jpg') no-repeat;
+    background: url('./img/car.jpg') no-repeat;
 }
 
 .banner-img::after {
@@ -227,7 +227,7 @@ button {
 .rent {
     position: relative;
     height: 524px;
-    background: url('/img/rent-1.svg') 50%/cover no-repeat;
+    background: url('./img/rent-1.svg') 50%/cover no-repeat;
 }
 
 .rent__name {
@@ -257,7 +257,7 @@ button {
 .rent__link::after {
     position: absolute;
     content: '';
-    background: url('img/errow.svg') 50%/cover no-repeat;
+    background: url('./img/errow.svg') 50%/cover no-repeat;
     top: 50%;
     right: 0;
     height: 16px;
@@ -266,15 +266,15 @@ button {
 }
 
 .rent:nth-child(2) {
-    background-image: url('/img/rent-2.svg');
+    background-image: url('./img/rent-2.svg');
 }
 
 .rent:nth-child(3) {
-    background-image: url('/img/rent-3.svg');
+    background-image: url('./img/rent-3.svg');
 }
 
 .rent:nth-child(4) {
-    background-image: url('/img/rent-4.svg');
+    background-image: url('./img/rent-4.svg');
 }
 
 /* ========services============ */
@@ -373,7 +373,7 @@ button {
 }
 
 .distination-infor__link:hover {
-    color:#be6607;
+    color: #be6607;
 }
 
 /* =========Location========== */
@@ -459,12 +459,12 @@ button {
 }
 
 .footer-social {
-   margin-top: 66px;
+    margin-top: 66px;
 }
 
 .footer-social__link {
     display: block;
-    margin-bottom: 17px;    
+    margin-bottom: 17px;
 }
 
 .footer-social__link:nth-child(3) {
